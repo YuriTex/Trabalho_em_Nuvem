@@ -46,3 +46,44 @@ body {
     justify-content: space-around;
     margin: 4% 0 0 0%;
 }
+
+.container__texto {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 40%;
+    margin: 0 0 0 10%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.container__texto h1 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 36px;
+    margin: 0% 0 4% 0;
+}
+
+.container__texto p {
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
+    text-align: justify;
+    margin: 0% 0 5% 0;
+    color: var(--cor-primaria);
+}
+
+.container__texto a {
+    width: 12rem;
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3% 6%;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    border: 2px solid #444;
+}
+
+.container__texto a:hover {
+    background-color: var(--cor-hover);
+}

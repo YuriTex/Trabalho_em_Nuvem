@@ -94,3 +94,17 @@ body {
      width: 35%;
      margin: 0 10% 4% 0;
  }
+ 
+ .container__service {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 10% 0 10%;
+}
+
+.container__servico h1 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 36px;
+    margin: 2% 0 0 45%;
+}

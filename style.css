@@ -39,3 +39,10 @@ body {
 .navbar a:hover {
     color: var(--cor-secundaria);
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4% 0 0 0%;
+}

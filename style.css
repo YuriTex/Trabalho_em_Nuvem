@@ -10,3 +10,8 @@
     --fonte-primaria: 'DM Sans', sans-serif;
     --fonte-secundaria: 'Bebas Neue', sans-serif;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}

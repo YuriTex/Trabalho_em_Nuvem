@@ -148,3 +148,75 @@ body {
 .container__boxs:hover {
     background-color: var(--cor-hover);
 }
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px ) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 30%;
+    }
+    .container__service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30%;
+    }
+
+    .container__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__boxs {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 10rem;
+    }
+    .container__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10rem;
+    }
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1201px) {
+
+}

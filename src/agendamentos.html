@@ -68,6 +68,27 @@
             agendamento.set("service", service);
             agendamento.set("date", date);
             agendamento.set("time", time);
+
+            try {
+                // Salva o objeto no banco de dados
+                await agendamento.save();
+                alert(`Agendamento feito com sucesso!\nNome: ${name}\nServiço: ${service}\nData: ${date}\nHora: ${time}`);
+                   // Armazenar os dados no localStorage
+        localStorage.setItem("agendamento", JSON.stringify({
+            name,
+            phone,
+            service,
+            date,
+            time
+        }));
+
+        // Redirecionar para a nova página
+        window.location.href = "confirmacao.html"; // Altere o nome do arquivo conforme necessário
+            
+            } catch (error) {
+                alert(`Erro ao agendar: ${error.message}`);
+            }
+        }
     </script>
 </body>
 </html>

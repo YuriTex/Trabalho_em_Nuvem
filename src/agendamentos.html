@@ -89,6 +89,17 @@
                 alert(`Erro ao agendar: ${error.message}`);
             }
         }
+
+        document.getElementById("name").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("service").value = "";
+        document.getElementById("date").value = "";
+        document.getElementById("time").value = "";
+
+        // Adiciona o listener ao botão de agendar
+        document.getElementById("agendarButton").addEventListener("click", async function () {
+            await agendarAtendimento();
+        });
     </script>
 </body>
 </html>

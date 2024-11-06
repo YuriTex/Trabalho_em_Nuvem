@@ -50,6 +50,13 @@
 
         // Redirecionar para a nova página
         window.location.href = "confirmacao.html";
+
+         // Remover os dados do localStorage (opcional)
+         localStorage.removeItem("agendamento");
+        } else {
+            // Se não houver agendamento, redirecionar de volta
+            window.location.href = "index.html"; // Altere conforme necessário
+        }
     </script>
 </body>
 </html>

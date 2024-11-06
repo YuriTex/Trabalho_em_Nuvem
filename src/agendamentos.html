@@ -49,6 +49,25 @@
     <script>
         Parse.initialize("dePG2YGB5210rOWP1u6KCdgH0YaNybsE1FYqAgK4", "ed2cxBIk0tbT5raSa96ExEFd3T1KVdS8hYumL7G6");
         Parse.serverURL = "https://parseapi.back4app.com/";
+
+        // Função para agendar atendimento
+        async function agendarAtendimento() {
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const service = document.getElementById("service").value;
+            const date = document.getElementById("date").value;
+            const time = document.getElementById("time").value;
+    
+            // Cria um novo objeto de agendamento
+            const Agendamento = Parse.Object.extend("Agendamento");
+            const agendamento = new Agendamento();
+    
+            // Define os atributos do objeto
+            agendamento.set("name", name);
+            agendamento.set("phone", phone);
+            agendamento.set("service", service);
+            agendamento.set("date", date);
+            agendamento.set("time", time);
     </script>
 </body>
 </html>
